@@ -25,6 +25,17 @@ body {
 .section-padding {
 	padding: 5em 0;
 }
+
+@mixin buttonStyles {
+	background-image: linear-gradient(to right, $blue, $cyan);
+	color: $white;
+	font-size: 1.6rem;
+	font-family: "Raleway", sans-serif;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
 .nav {
 	position: absolute;
 	top: 30px;
@@ -94,14 +105,10 @@ body {
 	&__button {
 		margin-top: 3em;
 		padding: 1em 5em;
-		background-image: linear-gradient(to right, $blue, $cyan);
-		color: $white;
 		font-weight: 700;
-		font-size: 1.6rem;
-		font-family: "Raleway", sans-serif;
-		border: none;
-		border-radius: 25px;
-		cursor: pointer;
+
+
+		@include buttonStyles();
 	}
 }
 
@@ -240,15 +247,14 @@ body {
 		position: absolute;
 		top: -150px;
 		width: 90%;
-		max-width: 900px;
 		left: 50%;
 		transform: translateX(-50%);
-
+		max-width: 900px;
 		padding: 3em 1em;
-
 		background-color: $dark-blue-hero;
-		text-align: center;
 		border-radius: 10px;
+		text-align: center;
+		z-index: 1;
 		&-heading,
 		&-text {
 			color: $white;
@@ -273,15 +279,9 @@ body {
 		}
 		&-button {
 			padding: 0.8em 0;
-
-			color: $white;
-			background-image: linear-gradient(to right, $blue, $cyan);
-
-			font-size: 1.6rem;
-			font-family: "Raleway", sans-serif;
-			border: none;
 			border-radius: 40px;
-			cursor: pointer;
+			@include buttonStyles();
+
 		}
 		&-input,
 		&-button {
@@ -343,6 +343,7 @@ body {
 			border: 1px solid $white;
 			border-radius: 50%;
 			text-align: center;
+			cursor: pointer;
 		}
 	}
 }

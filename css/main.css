@@ -122,10 +122,10 @@ body {
 .header__button {
   margin-top: 3em;
   padding: 1em 5em;
+  font-weight: 700;
   background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
   background-image: linear-gradient(to right, #339ecc, #65e2d9);
   color: white;
-  font-weight: 700;
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
   border: none;
@@ -295,14 +295,15 @@ body {
   position: absolute;
   top: -150px;
   width: 90%;
-  max-width: 900px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  max-width: 900px;
   padding: 3em 1em;
   background-color: #1c2431;
-  text-align: center;
   border-radius: 10px;
+  text-align: center;
+  z-index: 1;
 }
 
 .footer__box-email-heading, .footer__box-email-text {
@@ -344,13 +345,14 @@ body {
 
 .footer__box-email-button {
   padding: 0.8em 0;
-  color: white;
+  border-radius: 40px;
   background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
   background-image: linear-gradient(to right, #339ecc, #65e2d9);
+  color: white;
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
   border: none;
-  border-radius: 40px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
@@ -425,6 +427,7 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   text-align: center;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -470,11 +473,11 @@ body {
     margin-left: 1em;
   }
   .footer__box {
-    padding-top: 250px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    padding-top: 250px;
   }
   .footer__logo {
     top: 170px;
@@ -496,16 +499,16 @@ body {
     font-size: 1.6rem;
   }
   .productive__heading {
-    font-size: 5rem;
     margin-bottom: 1em;
+    font-size: 5rem;
   }
   .footer__box-email-heading {
-    font-size: 4rem;
     margin-bottom: 1em;
+    font-size: 4rem;
   }
   .footer__box-email-text {
-    font-size: 1.6rem;
     margin-bottom: 2em;
+    font-size: 1.6rem;
   }
   .footer__box-contact {
     display: -ms-grid;
