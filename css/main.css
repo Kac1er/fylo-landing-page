@@ -225,6 +225,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 15em;
 }
 
 .testimonials__card {
@@ -285,10 +286,151 @@ body {
   border-radius: 50%;
 }
 
+.footer {
+  position: relative;
+  background-color: #0b1523;
+}
+
+.footer__box-email {
+  position: absolute;
+  top: -150px;
+  width: 90%;
+  max-width: 900px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 3em 1em;
+  background-color: #1c2431;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.footer__box-email-heading, .footer__box-email-text {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+.footer__box-email-heading {
+  font-family: "Raleway", sans-serif;
+}
+
+.footer__box-email-text {
+  font-size: 1.4rem;
+  line-height: 1.6em;
+  max-width: 700px;
+  margin: 0 auto 1.5em auto;
+}
+
+.footer__box-email-input {
+  padding: 1em 2em;
+  border-radius: 40px;
+}
+
+.footer__box-email-input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.footer__box-email-input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.footer__box-email-input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.footer__box-email-input::placeholder {
+  opacity: 0.5;
+}
+
+.footer__box-email-button {
+  padding: 0.8em 0;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
+  background-image: linear-gradient(to right, #339ecc, #65e2d9);
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.footer__box-email-input, .footer__box-email-button {
+  width: 250px;
+  margin-bottom: 1.5em;
+}
+
+.footer__box {
+  position: relative;
+  padding-top: 350px;
+  padding-left: 1em;
+}
+
+.footer__box-contact-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px 200px;
+      grid-template-columns: 30px 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em 0;
+  color: white;
+}
+
+.footer__box-contact-item i {
+  font-size: 2rem;
+}
+
+.footer__box-contact-item:nth-child(1) i {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding-top: 0.5em;
+}
+
+.footer__logo {
+  position: absolute;
+  top: 280px;
+  left: 20px;
+}
+
+.footer__list {
+  padding: 1.5em 0;
+  list-style: none;
+}
+
+.footer__list-item {
+  padding: 0.5em 0;
+}
+
+.footer__list-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.footer__socials-item {
+  margin: 0 0.5em;
+  padding: 0.8em;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .header__box-img img {
     width: 100%;
-    max-width: 900px;
+    max-width: 700px;
   }
   .header__heading {
     font-size: 4rem;
@@ -320,6 +462,26 @@ body {
   .productive__box-img {
     padding-left: 2em;
   }
+  .footer__box-email-input {
+    width: 400px;
+  }
+  .footer__box-email-button {
+    width: 200px;
+    margin-left: 1em;
+  }
+  .footer__box {
+    padding-top: 250px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .footer__logo {
+    top: 170px;
+  }
+  .footer__socials-item {
+    height: 40px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -336,6 +498,40 @@ body {
   .productive__heading {
     font-size: 5rem;
     margin-bottom: 1em;
+  }
+  .footer__box-email-heading {
+    font-size: 4rem;
+    margin-bottom: 1em;
+  }
+  .footer__box-email-text {
+    font-size: 1.6rem;
+    margin-bottom: 2em;
+  }
+  .footer__box-contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (50px)[2];
+        grid-template-rows: repeat(2, 50px);
+  }
+  .footer__box-contact-item {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .footer__box-contact-item:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .footer__list {
+    margin-left: 3em;
+  }
+  .footer__socials {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=main.css.map */

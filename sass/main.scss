@@ -179,6 +179,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
 	justify-content: center;
+	padding-bottom: 15em;
 	&__card {
 		position: relative;
 		background-color: $dark-blue-testimonials;
@@ -226,6 +227,122 @@ body {
 		&-img {
 			width: 50px;
 			border-radius: 50%;
+		}
+	}
+}
+
+.footer {
+	position: relative;
+
+	background-color: $dark-blue-footer;
+
+	&__box-email {
+		position: absolute;
+		top: -150px;
+		width: 90%;
+		max-width: 900px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		padding: 3em 1em;
+
+		background-color: $dark-blue-hero;
+		text-align: center;
+		border-radius: 10px;
+		&-heading,
+		&-text {
+			color: $white;
+			margin-bottom: 1.5em;
+		}
+		&-heading {
+			font-family: "Raleway", sans-serif;
+		}
+		&-text {
+			font-size: 1.4rem;
+			line-height: 1.6em;
+			max-width: 700px;
+			margin: 0 auto 1.5em auto;
+		}
+		&-input {
+			padding: 1em 2em;
+			border-radius: 40px;
+
+			&::placeholder {
+				opacity: 0.5;
+			}
+		}
+		&-button {
+			padding: 0.8em 0;
+
+			color: $white;
+			background-image: linear-gradient(to right, $blue, $cyan);
+
+			font-size: 1.6rem;
+			font-family: "Raleway", sans-serif;
+			border: none;
+			border-radius: 40px;
+			cursor: pointer;
+		}
+		&-input,
+		&-button {
+			width: 250px;
+			margin-bottom: 1.5em;
+		}
+	}
+
+	&__box {
+		position: relative;
+		padding-top: 350px;
+		padding-left: 1em;
+
+		&-contact {
+			&-item {
+				display: grid;
+				grid-template-columns: 30px 200px;
+				align-items: center;
+				margin: 2em 0;
+				color: $white;
+
+				i {
+					font-size: 2rem;
+				}
+			}
+			&-item:nth-child(1) {
+				i {
+					align-self: start;
+					padding-top: 0.5em;
+				}
+			}
+		}
+	}
+	&__logo {
+		position: absolute;
+		top: 280px;
+		left: 20px;
+	}
+	&__list {
+		padding: 1.5em 0;
+		list-style: none;
+
+		&-item {
+			padding: 0.5em 0;
+			a {
+				text-decoration: none;
+				color: $white;
+			}
+		}
+	}
+	&__socials {
+		display: flex;
+		justify-content: center;
+		margin-top: 2em;
+		&-item {
+			margin: 0 0.5em;
+			padding: 0.8em;
+			color: $white;
+			border: 1px solid $white;
+			border-radius: 50%;
+			text-align: center;
 		}
 	}
 }

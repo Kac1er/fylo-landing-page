@@ -3,7 +3,7 @@
 		&__box-img {
 			img {
 				width: 100%;
-				max-width: 900px;
+				max-width: 700px;
 			}
 		}
 		&__heading {
@@ -43,12 +43,28 @@
 			padding-left: 2em;
 		}
 	}
-	// .testimonials {
-	// 	display: grid;
-
-	// 	grid-template-columns: repeat(2, 1fr);
-
-	// 	.testimonials__card:nth-child(1) {
-	// 	}
-	// }
+	.footer {
+		&__box-email {
+			&-input {
+				width: 400px;
+			}
+			&-button {
+				width: 200px;
+				margin-left: 1em;
+			}
+		}
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			padding-top: 250px;
+		}
+		&__logo {
+			top: 170px;
+		}
+		&__socials {
+			&-item {
+				height: 40px;
+			}
+		}
+	}
 }
