@@ -22,4 +22,4 @@ Project is created with:
 
 ## Live
 
-Soon...
+Check how this project looks right now! [Click! (netlify hosted)](https://romantic-gates-79856f.netlify.app/)
