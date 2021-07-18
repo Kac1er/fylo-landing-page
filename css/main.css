@@ -163,10 +163,58 @@ body {
 
 .benefits .benefit__heading {
   font-family: "Raleway", sans-serif;
+  font-size: 2.4rem;
 }
 
 .benefits .benefit__img {
   margin-bottom: 2em;
+}
+
+.productive {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productive__box-img {
+  margin-bottom: 3em;
+}
+
+.productive__box-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.productive__box-info {
+  padding: 0 1em;
+}
+
+.productive__heading, .productive__text {
+  color: white;
+  margin-bottom: 2em;
+}
+
+.productive__heading {
+  font-family: "Raleway", sans-serif;
+}
+
+.productive__link {
+  position: relative;
+  display: inline-block;
+  color: #65e2d9;
+  text-decoration: none;
+}
+
+.productive__link::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #65e2d9;
 }
 
 @media (min-width: 768px) {
@@ -194,6 +242,16 @@ body {
   .benefits .benefit__card {
     max-width: 400px;
   }
+  .productive {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .productive__box-info {
+    padding-right: 3em;
+  }
+  .productive__box-img {
+    padding-left: 2em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -206,6 +264,10 @@ body {
   }
   .benefits .benefit__text {
     font-size: 1.6rem;
+  }
+  .productive__heading {
+    font-size: 5rem;
+    margin-bottom: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

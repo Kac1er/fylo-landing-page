@@ -128,9 +128,49 @@ body {
 		}
 		&__heading {
 			font-family: "Raleway", sans-serif;
+			font-size: 2.4rem;
 		}
 		&__img {
 			margin-bottom: 2em;
+		}
+	}
+}
+
+.productive {
+	display: grid;
+	align-items: center;
+	&__box-img {
+		margin-bottom: 3em;
+		img {
+			width: 100%;
+			max-width: 500px;
+		}
+	}
+	&__box-info {
+		padding: 0 1em;
+	}
+	&__heading,
+	&__text {
+		color: $white;
+		margin-bottom: 2em;
+	}
+	&__heading {
+		font-family: "Raleway", sans-serif;
+	}
+	&__link {
+		position: relative;
+		display: inline-block;
+		color: $cyan;
+		text-decoration: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -9px;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: $cyan;
 		}
 	}
 }

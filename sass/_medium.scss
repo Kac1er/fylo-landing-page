@@ -20,9 +20,9 @@
 				font-size: 1.6rem;
 			}
 		}
-        &__logo {
-            width: 120px;
-        }
+		&__logo {
+			width: 120px;
+		}
 	}
 	.benefits {
 		grid-template-columns: repeat(2, 1fr);
@@ -31,6 +31,16 @@
 			&__card {
 				max-width: 400px;
 			}
+		}
+	}
+	.productive {
+		grid-template-columns: repeat(2, 1fr);
+
+		&__box-info {
+			padding-right: 3em;
+		}
+		&__box-img {
+			padding-left: 2em;
 		}
 	}
 }
