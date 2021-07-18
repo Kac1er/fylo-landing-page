@@ -1,0 +1,139 @@
+@import "./colors";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.6rem;
+}
+.wrapper {
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.section-padding {
+	padding: 5em 0;
+}
+.nav {
+	position: absolute;
+	top: 30px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1em;
+
+	&__logo {
+		width: 80px;
+	}
+	&__list {
+		display: flex;
+
+		list-style: none;
+		padding-bottom: 0.5em;
+
+		&-item {
+			margin: 0 0.3em;
+			font-size: 1.4rem;
+
+			a {
+				text-decoration: none;
+				color: $white;
+			}
+		}
+	}
+}
+.header {
+	min-height: 100vh;
+	background: url("../img/bg-curvy-mobile.svg"), $dark-blue-hero;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 1000px;
+
+	display: grid;
+	grid-template-columns: minmax(300px, 800px);
+	justify-content: center;
+	padding: 7em 0;
+	&__box-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 3em;
+		img {
+			width: 80%;
+		}
+	}
+	&__box-info {
+		text-align: center;
+		color: $white;
+		padding: 0 1em;
+	}
+	&__heading {
+		font-size: 2.5rem;
+		line-height: 1.6em;
+		font-family: "Raleway", sans-serif;
+	}
+	&__text {
+		margin-top: 3em;
+		font-size: 1.4rem;
+		line-height: 1.8em;
+	}
+	&__button {
+		margin-top: 3em;
+		padding: 1em 5em;
+		background-image: linear-gradient(to right, $blue, $cyan);
+		color: $white;
+		font-weight: 700;
+		font-size: 1.6rem;
+		font-family: "Raleway", sans-serif;
+		border: none;
+		border-radius: 25px;
+		cursor: pointer;
+	}
+}
+
+.main {
+	background-color: $dark-blue-main;
+}
+
+.benefits {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.benefit {
+		&__card {
+			margin: 2.5em auto;
+			padding: 0 1.5em;
+		}
+		&__heading,
+		&__text {
+			color: $white;
+			margin-bottom: 1em;
+		}
+		&__heading {
+			font-family: "Raleway", sans-serif;
+		}
+		&__img {
+			margin-bottom: 2em;
+		}
+	}
+}
+@import "./small";
+@import "./medium";
+@import "./large";

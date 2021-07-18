@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 5em 0;
+}
+
+.nav {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em;
+}
+
+.nav__logo {
+  width: 80px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-bottom: 0.5em;
+}
+
+.nav__list-item {
+  margin: 0 0.3em;
+  font-size: 1.4rem;
+}
+
+.nav__list-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("../img/bg-curvy-mobile.svg"), #1c2431;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(300px, 800px);
+      grid-template-columns: minmax(300px, 800px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7em 0;
+}
+
+.header__box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3em;
+}
+
+.header__box-img img {
+  width: 80%;
+}
+
+.header__box-info {
+  text-align: center;
+  color: white;
+  padding: 0 1em;
+}
+
+.header__heading {
+  font-size: 2.5rem;
+  line-height: 1.6em;
+  font-family: "Raleway", sans-serif;
+}
+
+.header__text {
+  margin-top: 3em;
+  font-size: 1.4rem;
+  line-height: 1.8em;
+}
+
+.header__button {
+  margin-top: 3em;
+  padding: 1em 5em;
+  background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#65e2d9));
+  background-image: linear-gradient(to right, #339ecc, #65e2d9);
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.main {
+  background-color: #181f2a;
+}
+
+.benefits {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.benefits .benefit__card {
+  margin: 2.5em auto;
+  padding: 0 1.5em;
+}
+
+.benefits .benefit__heading, .benefits .benefit__text {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.benefits .benefit__heading {
+  font-family: "Raleway", sans-serif;
+}
+
+.benefits .benefit__img {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .header__box-img img {
+    width: 100%;
+    max-width: 900px;
+  }
+  .header__heading {
+    font-size: 4rem;
+  }
+  .header__text {
+    font-size: 2.2rem;
+  }
+  .nav__list-item {
+    margin: 0 1em;
+    font-size: 1.6rem;
+  }
+  .nav__logo {
+    width: 120px;
+  }
+  .benefits {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .benefits .benefit__card {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: url("../img/bg-curvy-desktop.svg");
+    background-size: 100%;
+  }
+  .benefits .benefit__heading {
+    font-size: 2.8rem;
+  }
+  .benefits .benefit__text {
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
