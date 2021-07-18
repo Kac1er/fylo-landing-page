@@ -174,6 +174,61 @@ body {
 		}
 	}
 }
+
+.testimonials {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+	justify-content: center;
+	&__card {
+		position: relative;
+		background-color: $dark-blue-testimonials;
+		margin: 2em 1em;
+		padding: 2em 1em;
+
+		.quotation {
+			position: absolute;
+			top: -45px;
+			left: 0;
+			width: 80px;
+			height: 80px;
+			background-image: url("../img/bg-quotes.png");
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__text {
+		font-size: 1.3rem;
+		line-height: 1.8em;
+		margin-bottom: 2em;
+		color: $white;
+	}
+
+	&__box-author {
+		display: grid;
+		grid-template-columns: 60px 140px;
+		grid-template-rows: 30px;
+	}
+	&__author {
+		&-name,
+		&-role {
+			color: $white;
+			font-family: "Raleway", sans-serif;
+		}
+		&-name {
+			margin-top: 0.2em;
+		}
+		&-role {
+			grid-column: 2/3;
+			grid-row: 2/3;
+			font-size: 1.2rem;
+			opacity: 0.6;
+		}
+		&-img {
+			width: 50px;
+			border-radius: 50%;
+		}
+	}
+}
 @import "./small";
 @import "./medium";
 @import "./large";

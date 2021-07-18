@@ -217,6 +217,74 @@ body {
   background-color: #65e2d9;
 }
 
+.testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 600px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials__card {
+  position: relative;
+  background-color: #202a3c;
+  margin: 2em 1em;
+  padding: 2em 1em;
+}
+
+.testimonials__card .quotation {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/bg-quotes.png");
+  background-repeat: no-repeat;
+}
+
+.testimonials__text {
+  font-size: 1.3rem;
+  line-height: 1.8em;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.testimonials__box-author {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 140px;
+      grid-template-columns: 60px 140px;
+  -ms-grid-rows: 30px;
+      grid-template-rows: 30px;
+}
+
+.testimonials__author-name, .testimonials__author-role {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.testimonials__author-name {
+  margin-top: 0.2em;
+}
+
+.testimonials__author-role {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.testimonials__author-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
 @media (min-width: 768px) {
   .header__box-img img {
     width: 100%;
